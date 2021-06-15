@@ -17,4 +17,4 @@ workflows:
       - build:
           matrix:
             parameters:
-              resource: ["medium", "medium", "medium", "medium"]
+              resource: ["medium", "large", "xlarge", "2xlarge"]
