@@ -9,7 +9,8 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
-      - run: lscpu
+      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && sudo -u joe -H sh -c "whoami"
+      - run: pwd
 
 workflows:
   workflow:
