@@ -6,3 +6,5 @@ whoami
 EOF
 echo "Out"
 whoami
+su - joe
+whoami
