@@ -7,7 +7,7 @@ jobs:
         type: string
     resource_class: << parameters.resource >>
     machine:
-      image: ubuntu-1604:202007-01
+      image: ubuntu-1604:201903-01
     steps:
       - run: lscpu
 
@@ -17,4 +17,4 @@ workflows:
       - build:
           matrix:
             parameters:
-              resource: ["medium", "large"]
+              resource: ["medium", "medium", "medium", "medium"]
