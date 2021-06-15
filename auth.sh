@@ -1,10 +1,7 @@
 #!/bin/bash
 whoami
 sudo -u joe bash << EOF
-echo "In"
-whoami
+sudo -u joe -H sh -c "whoami"
 EOF
 echo "Out"
-whoami
-su - joe
 whoami
